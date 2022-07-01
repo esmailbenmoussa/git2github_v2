@@ -1,0 +1,110 @@
+[
+  {
+    "Origin-repo": "tools.git",
+    "Target-repo": "RNS-tools_og"
+  },
+  {
+    "Origin-repo": "actionsystem.git",
+    "Target-repo": "RNS-actionsystem_og"
+  },
+  {
+    "Origin-repo": "common.git",
+    "Target-repo": "RNS-common_og"
+  },
+  {
+    "Origin-repo": "recordreader.git",
+    "Target-repo": "RNS-recordreader_og"
+  },
+  {
+    "Origin-repo": "datamodel.git",
+    "Target-repo": "RNS-datamodel_og"
+  },
+  {
+    "Origin-repo": "MLL.git",
+    "Target-repo": "RNS-MLL_og"
+  },
+  {
+    "Origin-repo": "dataingestion.git",
+    "Target-repo": "RNS-dataingestion_og"
+  },
+  {
+    "Origin-repo": "datamodel-metadata.git",
+    "Target-repo": "RNS-datamodel-metadata_og"
+  },
+  {
+    "Origin-repo": "travelprediction.git",
+    "Target-repo": "RNS-travelprediction_og"
+  },
+  {
+    "Origin-repo": "personaclassification.git",
+    "Target-repo": "personaclassification_og"
+  },
+  {
+    "Origin-repo": "lifecycle.git",
+    "Target-repo": "RNS-lifecycle_og"
+  },
+  {
+    "Origin-repo": "rpmsources.git",
+    "Target-repo": "RNS-rpmsources_og"
+  },
+  {
+    "Origin-repo": "presto.git",
+    "Target-repo": "RNS-presto_og"
+  },
+  {
+    "Origin-repo": "proteum.git",
+    "Target-repo": "RNS-proteum_og"
+  },
+  {
+    "Origin-repo": "realtimekpi.git",
+    "Target-repo": "RNS-realtimekpi_og"
+  },
+  {
+    "Origin-repo": "rcem.git",
+    "Target-repo": "RNS-rcem_og"
+  },
+  {
+    "Origin-repo": "roaminganalytics.git",
+    "Target-repo": "RNS-roaminganalytics_og"
+  },
+  {
+    "Origin-repo": "ixc.git",
+    "Target-repo": "RNS-ixc_og"
+  },
+  {
+    "Origin-repo": "rcem_tracer.git",
+    "Target-repo": "RNS-rcem_tracer_og"
+  },
+  {
+    "Origin-repo": "uiservice.git",
+    "Target-repo": "RNS-uiservice_og"
+  },
+  {
+    "Origin-repo": "rcem_crm.git",
+    "Target-repo": "RNS-rcem_crm_og"
+  },
+  {
+    "Origin-repo": "roameranalytics.git",
+    "Target-repo": "RNS-roameranalytics_og"
+  },
+  {
+    "Origin-repo": "rulebuilder.git",
+    "Target-repo": "RNS-rulebuilder_og"
+  },
+  {
+    "Origin-repo": "rcem_dashboards.git",
+    "Target-repo": "RNS-rcem_dashboards_og"
+  },
+  {
+    "Origin-repo": "cfa.git",
+    "Target-repo": "RNS-cfa_og"
+  },
+  {
+    "Origin-repo": "interconnectanalytics.git",
+    "Target-repo": "RNS-interconnectanalytics_og"
+  },
+  {
+    "Origin-repo": "aiwb.git",
+    "Target-repo": "RNS-aiwb_og"
+  }
+]

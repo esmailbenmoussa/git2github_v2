@@ -1,0 +1,478 @@
+[
+  {
+    "Origin-repo": "actionsystem.git",
+    "Target-repo": "RNS-actionsystem"
+  },
+  {
+    "Origin-repo": "diameter.git",
+    "Target-repo": "RNS-diameter"
+  },
+  {
+    "Origin-repo": "och.git",
+    "Target-repo": "RNS-och"
+  },
+  {
+    "Origin-repo": "aiplatform.git",
+    "Target-repo": "RNS-aiplatform"
+  },
+  {
+    "Origin-repo": "dsdp.git",
+    "Target-repo": "RNS-dsdp"
+  },
+  {
+    "Origin-repo": "aiwb.git",
+    "Target-repo": "RNS-aiwb"
+  },
+  {
+    "Origin-repo": "analytics.git",
+    "Target-repo": "RNS-analytics"
+  },
+  {
+    "Origin-repo": "association.git",
+    "Target-repo": "RNS-association"
+  },
+  {
+    "Origin-repo": "awx.git",
+    "Target-repo": "RNS-awx"
+  },
+  {
+    "Origin-repo": "biginsights.git",
+    "Target-repo": "RNS-biginsights"
+  },
+  {
+    "Origin-repo": "bongo.git",
+    "Target-repo": "RNS-bongo"
+  },
+  {
+    "Origin-repo": "border-roaming.git",
+    "Target-repo": "RNS-border-roaming"
+  },
+  {
+    "Origin-repo": "branches",
+    "Target-repo": "RNS-branches"
+  },
+  {
+    "Origin-repo": "build.git",
+    "Target-repo": "RNS-build"
+  },
+  {
+    "Origin-repo": "build-slave-scripts.git",
+    "Target-repo": "RNS-build-slave-scripts"
+  },
+  {
+    "Origin-repo": "cfa.git",
+    "Target-repo": "RNS-cfa"
+  },
+  {
+    "Origin-repo": "cleanroom-build-system.git",
+    "Target-repo": "RNS-cleanroom-build-system"
+  },
+  {
+    "Origin-repo": "clients.git",
+    "Target-repo": "RNS-clients"
+  },
+  {
+    "Origin-repo": "common.git",
+    "Target-repo": "RNS-common"
+  },
+  {
+    "Origin-repo": "config",
+    "Target-repo": "RNS-config"
+  },
+  {
+    "Origin-repo": "libs.git",
+    "Target-repo": "RNS-libs"
+  },
+  {
+    "Origin-repo": "customer_data.git",
+    "Target-repo": "RNS-customer_data"
+  },
+  {
+    "Origin-repo": "damdaar.git",
+    "Target-repo": "RNS-damdaar"
+  },
+  {
+    "Origin-repo": "dataingestion0.1.git",
+    "Target-repo": "RNS-dataingestion0.1"
+  },
+  {
+    "Origin-repo": "dataingestion.git",
+    "Target-repo": "RNS-dataingestion"
+  },
+  {
+    "Origin-repo": "datamodel.git",
+    "Target-repo": "RNS-datamodel"
+  },
+  {
+    "Origin-repo": "datamodel-metadata.git",
+    "Target-repo": "RNS-datamodel-metadata"
+  },
+  {
+    "Origin-repo": "datascience.git",
+    "Target-repo": "RNS-datascience"
+  },
+  {
+    "Origin-repo": "datastore.git",
+    "Target-repo": "RNS-datastore"
+  },
+  {
+    "Origin-repo": "deploy-everything-test-new.git",
+    "Target-repo": "RNS-deploy-everything-test-new"
+  },
+  {
+    "Origin-repo": "deployments.git",
+    "Target-repo": "RNS-deployments"
+  },
+  {
+    "Origin-repo": "deployment-tools.git",
+    "Target-repo": "RNS-deployment-tools"
+  },
+  {
+    "Origin-repo": "devops.git",
+    "Target-repo": "RNS-devops"
+  },
+  {
+    "Origin-repo": "drum.git",
+    "Target-repo": "RNS-drum"
+  },
+  {
+    "Origin-repo": "ee.git",
+    "Target-repo": "RNS-ee"
+  },
+  {
+    "Origin-repo": "core.git",
+    "Target-repo": "RNS-core"
+  },
+  {
+    "Origin-repo": "environ.git",
+    "Target-repo": "RNS-environ"
+  },
+  {
+    "Origin-repo": "epdata.git",
+    "Target-repo": "RNS-epdata"
+  },
+  {
+    "Origin-repo": "ewokmockpeer.git",
+    "Target-repo": "RNS-ewokmockpeer"
+  },
+  {
+    "Origin-repo": "external-libs.git",
+    "Target-repo": "RNS-external-libs"
+  },
+  {
+    "Origin-repo": "extra.git",
+    "Target-repo": "RNS-extra"
+  },
+  {
+    "Origin-repo": "fraudanalytics.git.bkp",
+    "Target-repo": "RNS-fraudanalytics.git.bkp"
+  },
+  {
+    "Origin-repo": "fraud.git",
+    "Target-repo": "RNS-fraud"
+  },
+  {
+    "Origin-repo": "git",
+    "Target-repo": "RNS-git"
+  },
+  {
+    "Origin-repo": "grqmodel.git",
+    "Target-repo": "RNS-grqmodel"
+  },
+  {
+    "Origin-repo": "homepolicy.git",
+    "Target-repo": "RNS-homepolicy"
+  },
+  {
+    "Origin-repo": "ice.git",
+    "Target-repo": "RNS-ice"
+  },
+  {
+    "Origin-repo": "lcor.git",
+    "Target-repo": "RNS-lcor"
+  },
+  {
+    "Origin-repo": "wsms.git",
+    "Target-repo": "RNS-wsms"
+  },
+  {
+    "Origin-repo": "exporter.git",
+    "Target-repo": "RNS-exporter"
+  },
+  {
+    "Origin-repo": "interconnectanalytics.git",
+    "Target-repo": "RNS-interconnectanalytics"
+  },
+  {
+    "Origin-repo": "ixc.git",
+    "Target-repo": "RNS-ixc"
+  },
+  {
+    "Origin-repo": "jenkinsTestChild.git",
+    "Target-repo": "RNS-jenkinsTestChild"
+  },
+  {
+    "Origin-repo": "jenkinsTestParent.git",
+    "Target-repo": "RNS-jenkinsTestParent"
+  },
+  {
+    "Origin-repo": "jirarestclient.git",
+    "Target-repo": "RNS-jirarestclient"
+  },
+  {
+    "Origin-repo": "kpiqueryserver.git",
+    "Target-repo": "RNS-kpiqueryserver"
+  },
+  {
+    "Origin-repo": "libs.git",
+    "Target-repo": "RNS-libs"
+  },
+  {
+    "Origin-repo": "lifecycle.git",
+    "Target-repo": "RNS-lifecycle"
+  },
+  {
+    "Origin-repo": "linkbit.git",
+    "Target-repo": "RNS-linkbit"
+  },
+  {
+    "Origin-repo": "mapreduce.git",
+    "Target-repo": "RNS-mapreduce"
+  },
+  {
+    "Origin-repo": "maven-plugins.git",
+    "Target-repo": "RNS-maven-plugins"
+  },
+  {
+    "Origin-repo": "mergemodel.git",
+    "Target-repo": "RNS-mergemodel"
+  },
+  {
+    "Origin-repo": "MLL.git",
+    "Target-repo": "RNS-MLL"
+  },
+  {
+    "Origin-repo": "msu-counter.git",
+    "Target-repo": "RNS-msu-counter"
+  },
+  {
+    "Origin-repo": "ncc.git",
+    "Target-repo": "RNS-ncc"
+  },
+  {
+    "Origin-repo": "nfv.git",
+    "Target-repo": "RNS-nfv"
+  },
+  {
+    "Origin-repo": "oam.git",
+    "Target-repo": "RNS-oam"
+  },
+  {
+    "Origin-repo": "OfflineRepo.git",
+    "Target-repo": "RNS-OfflineRepo"
+  },
+  {
+    "Origin-repo": "ott.git",
+    "Target-repo": "RNS-ott"
+  },
+  {
+    "Origin-repo": "personaclassification.git",
+    "Target-repo": "personaclassification"
+  },
+  {
+    "Origin-repo": "playground.git",
+    "Target-repo": "RNS-playground"
+  },
+  {
+    "Origin-repo": "presto.git",
+    "Target-repo": "RNS-presto"
+  },
+  {
+    "Origin-repo": "presto_himanshu.git",
+    "Target-repo": "RNS-presto_himanshu"
+  },
+  {
+    "Origin-repo": "presto-mirror",
+    "Target-repo": "RNS-presto-mirror"
+  },
+  {
+    "Origin-repo": "proteum.git",
+    "Target-repo": "RNS-proteum"
+  },
+  {
+    "Origin-repo": "provisioning-landing-page.git",
+    "Target-repo": "RNS-provisioning-landing-page"
+  },
+  {
+    "Origin-repo": "qa.git",
+    "Target-repo": "RNS-qa"
+  },
+  {
+    "Origin-repo": "quoui.git",
+    "Target-repo": "RNS-quoui"
+  },
+  {
+    "Origin-repo": "rcem_crm.git",
+    "Target-repo": "RNS-rcem_crm"
+  },
+  {
+    "Origin-repo": "rcem_dashboards.git",
+    "Target-repo": "RNS-rcem_dashboards"
+  },
+  {
+    "Origin-repo": "rcem.git",
+    "Target-repo": "RNS-rcem"
+  },
+  {
+    "Origin-repo": "rcem_tracer.git",
+    "Target-repo": "RNS-rcem_tracer"
+  },
+  {
+    "Origin-repo": "realtimekpi.git",
+    "Target-repo": "RNS-realtimekpi"
+  },
+  {
+    "Origin-repo": "recordreader.git",
+    "Target-repo": "RNS-recordreader"
+  },
+  {
+    "Origin-repo": "retired.git",
+    "Target-repo": "RNS-retired"
+  },
+  {
+    "Origin-repo": "ris.git",
+    "Target-repo": "RNS-ris"
+  },
+  {
+    "Origin-repo": "roameranalytics.git",
+    "Target-repo": "RNS-roameranalytics"
+  },
+  {
+    "Origin-repo": "roaminganalytics-env.git",
+    "Target-repo": "RNS-roaminganalytics-env"
+  },
+  {
+    "Origin-repo": "roaminganalytics.git",
+    "Target-repo": "RNS-roaminganalytics"
+  },
+  {
+    "Origin-repo": "RoamingAnalyticsWeb.git",
+    "Target-repo": "RNS-RoamingAnalyticsWeb"
+  },
+  {
+    "Origin-repo": "rpms.git",
+    "Target-repo": "RNS-rpms"
+  },
+  {
+    "Origin-repo": "rpmsources.git",
+    "Target-repo": "RNS-rpmsources"
+  },
+  {
+    "Origin-repo": "RRT.git",
+    "Target-repo": "RNS-RRT"
+  },
+  {
+    "Origin-repo": "rulebuilder.git",
+    "Target-repo": "RNS-rulebuilder"
+  },
+  {
+    "Origin-repo": "scrumqa.git",
+    "Target-repo": "RNS-scrumqa"
+  },
+  {
+    "Origin-repo": "sms-fraud.git",
+    "Target-repo": "RNS-sms-fraud"
+  },
+  {
+    "Origin-repo": "sqlbuilder.git",
+    "Target-repo": "RNS-sqlbuilder"
+  },
+  {
+    "Origin-repo": "stats-base.git",
+    "Target-repo": "RNS-stats-base"
+  },
+  {
+    "Origin-repo": "steering.git",
+    "Target-repo": "RNS-steering"
+  },
+  {
+    "Origin-repo": "streamingaipl.git",
+    "Target-repo": "RNS-streamingaipl"
+  },
+  {
+    "Origin-repo": "streaming.git",
+    "Target-repo": "RNS-streaming"
+  },
+  {
+    "Origin-repo": "subscriptionfraud.git",
+    "Target-repo": "RNS-subscriptionfraud"
+  },
+  {
+    "Origin-repo": "syrei-tas.git",
+    "Target-repo": "RNS-syrei-tas"
+  },
+  {
+    "Origin-repo": "tableau.git",
+    "Target-repo": "RNS-tableau"
+  },
+  {
+    "Origin-repo": "telstra.git",
+    "Target-repo": "RNS-telstra"
+  },
+  {
+    "Origin-repo": "templates.git",
+    "Target-repo": "RNS-templates"
+  },
+  {
+    "Origin-repo": "testfactory_automation.git",
+    "Target-repo": "RNS-testfactory_automation"
+  },
+  {
+    "Origin-repo": "test-tools.git",
+    "Target-repo": "RNS-test-tools"
+  },
+  {
+    "Origin-repo": "tools.git",
+    "Target-repo": "RNS-tools"
+  },
+  {
+    "Origin-repo": "tracerutils.git",
+    "Target-repo": "RNS-tracerutils"
+  },
+  {
+    "Origin-repo": "travelprediction.git",
+    "Target-repo": "RNS-travelprediction"
+  },
+  {
+    "Origin-repo": "UI.git",
+    "Target-repo": "RNS-UI"
+  },
+  {
+    "Origin-repo": "uiservice.git",
+    "Target-repo": "RNS-uiservice"
+  },
+  {
+    "Origin-repo": "userdocs.git",
+    "Target-repo": "RNS-userdocs"
+  },
+  {
+    "Origin-repo": "UserPersona.git",
+    "Target-repo": "RNS-UserPersona"
+  },
+  {
+    "Origin-repo": "ussd-service-test-tool.git",
+    "Target-repo": "RNS-ussd-service-test-tool"
+  },
+  {
+    "Origin-repo": "vpn-demo.git",
+    "Target-repo": "RNS-vpn-demo"
+  },
+  {
+    "Origin-repo": "welcome-sms.git",
+    "Target-repo": "RNS-welcome-sms"
+  },
+  {
+    "Origin-repo": "wsms.git",
+    "Target-repo": "RNS-wsms"
+  }
+]
