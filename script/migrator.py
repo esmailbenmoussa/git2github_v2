@@ -94,28 +94,23 @@ class Migrator:
 
         # Following git commmands will clean the repo form old garbage and decrease the size of the repo.
         # git.run_gc_prune(self.script_path,self.working_path, target_repo)
-        # git.run_gc_repack(self.script_path,self.working_path, target_repo)
-
+        # git.run_gc_repack(self.script_path,self.working_path, target_repo)        
 
         if lfs == True:
-            try:
-                subprocess.check_call(
-                    ["git", "lfs", "migrate", "import", "--everything", "--above=100mb"])
-                push_repo = git.push_all(self.script_path,
-                    self.working_path, target_repo, "error_lfs", True)
-                if push_repo == True:
-                    git.push_tags(self.script_path,self.working_path, target_repo, "error_lfs")
-                    self.append_json(status_, target_repo, {
-                        "level": 3, "check": True})
-                    return True
+                lfs_initl = git.initialize_lfs(self.script_path,
+                    self.working_path, target_repo, "error_lfs")
+                if lfs_initl == True:
+                    push_repo = git.push_all(self.script_path,
+                        self.working_path, target_repo, "error_lfs", True)
+                    if push_repo == True:
+                        git.push_tags(self.script_path,self.working_path, target_repo, "error_lfs")
+                        self.append_json(status_, target_repo, {
+                            "level": 3, "check": True})
+                        return True
+                    else:
+                        return False
                 else:
                     return False
-            except subprocess.CalledProcessError as e:
-                error_msg = str(RuntimeError("command '{}' return with error (code {}): {}".format(
-                    e.cmd, e.returncode, e.output)))
-                self.append_json(error_,
-                                 target_repo, {"msg": error_msg})
-                return False
         else:
             push_repo = git.push_all(self.script_path,self.working_path, target_repo, error_, False)
             if push_repo == True:

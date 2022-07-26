@@ -1,8 +1,8 @@
 from stats import Analyzor
 from migrator import Migrator
+from reset import Reset
 import os
 from dotenv import load_dotenv
-from reset import Reset
 
 load_dotenv()
 
@@ -21,10 +21,10 @@ reset = Reset(project_path)
 
 if __name__ == '__main__':
     # Step.0 Reset migration
-    # reset.migration()
+    reset.migration()
 
     # Step.1 Initiate regular git migration / delete repos
-    migrator.initializer(lfs=False, delete=False)
+    # migrator.initializer(lfs=False, delete=False)
 
     # Step.2 Generate statistics and result reports
     # stats.initializer(lfs=False)
@@ -34,4 +34,3 @@ if __name__ == '__main__':
 
     # Step.4 Generate statistics and result reports
     # stats.initializer(lfs=True)
-

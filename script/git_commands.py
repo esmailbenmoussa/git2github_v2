@@ -46,7 +46,7 @@ class GitCommands:
         os.chdir(f"{working_path}/{repo_name}")
         try:
             subprocess.check_call(
-                ["git", "remote", "set-url", "origin", remote_url])
+                ["git", "remote", "add", "gh", remote_url])
         except subprocess.CalledProcessError as e:
             error_msg = str(RuntimeError("command '{}' return with error (code {}): {}".format(
                 e.cmd, e.returncode, e.output)))
@@ -82,12 +82,39 @@ class GitCommands:
     def push_all(self,script_path, working_path, repo_name, write_json_file, lfs):
         os.chdir(f"{working_path}/{repo_name}")
         try:
-            if lfs==True:
-                subprocess.check_call(
-                ["git", "push", "--all", "origin"])
+            if lfs == True:
+                try:
+                    subprocess.check_call(
+                    ["git", "push", "gh"])
+                except subprocess.CalledProcessError as e:
+                    try:
+                        subprocess.check_call(
+                        ["git", "push","-f", "gh", "main"])
+                    except subprocess.CalledProcessError as e:
+                        return False
             else:
-                subprocess.check_call(
-                ["git", "push", "--all", "origin"])
+                try:
+                    subprocess.check_call(
+                    ["git", "push", "--all", "gh"])
+                except subprocess.CalledProcessError as e:
+                    try:
+                        subprocess.check_call(
+                        ["git", "push","-f", "gh", "main"])
+                    except subprocess.CalledProcessError as e:
+                        return False
+        except subprocess.CalledProcessError as e:
+            error_msg = str(RuntimeError("command '{}' return with error (code {}): {}".format(
+                e.cmd, e.returncode, e.output)))
+            self.write_json(script_path,write_json_file, repo_name, {"msg": error_msg})
+            return False
+        else:
+            return True
+   
+    def initialize_lfs(self,script_path, working_path, repo_name, write_json_file):
+        os.chdir(f"{working_path}/{repo_name}")
+        try:
+            subprocess.check_call(
+                    ["git", "lfs", "migrate", "import", "--everything", "--above=100mb"])
         except subprocess.CalledProcessError as e:
             error_msg = str(RuntimeError("command '{}' return with error (code {}): {}".format(
                 e.cmd, e.returncode, e.output)))
@@ -99,15 +126,31 @@ class GitCommands:
     def clone_bare(self,script_path, working_path, git_server, origin_repo, target_repo, write_json_file):
         os.chdir(f"{working_path}")
         try:
+            command = ["git", "clone", "--bare",
+                        fr"{git_server}/{origin_repo}",
+                        target_repo]
             subprocess.check_call(
-                ["git", "clone", "--bare",
-                 fr"{git_server}/{origin_repo}",
-                 target_repo])
+                        command)
         except subprocess.CalledProcessError as e:
-            error_msg = str(RuntimeError("command '{}' return with error (code {}): {}".format(
-                e.cmd, e.returncode, e.output)))
-            self.write_json(script_path,write_json_file, target_repo, {"msg": error_msg})
-            return False
+                try:
+                    command = ["git", "clone", "--bare", "--depth", "1",
+                        fr"{git_server}/{origin_repo}",
+                        target_repo]
+                #     subprocess.check_call(
+                #       ["git", "config", "--global", "pack.windowMemory", "100m"])
+                #     subprocess.check_call(
+                # ["git", "config", "--global", "pack.packSizeLimit", "100m"])
+                #     subprocess.check_call(
+                # ["git", "config", "--global", "pack.threads", "1"])
+                    subprocess.check_call(
+                                command) 
+                    os.chdir(f"{working_path}/{target_repo}")
+                    subprocess.check_call(["git", "fetch","--unshallow", "origin"]) 
+                except subprocess.CalledProcessError as e:
+                    error_msg = str(RuntimeError("command '{}' return with error (code {}): {}".format(
+                        e.cmd, e.returncode, e.output)))
+                    self.write_json(script_path,write_json_file, target_repo, {"msg": error_msg})
+                    return False
         else:
             return True
 
